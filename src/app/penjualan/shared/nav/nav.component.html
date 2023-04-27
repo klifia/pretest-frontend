@@ -1,0 +1,16 @@
+
+  <div class="d-flex flex-xolumn flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">
+        <app-header></app-header>
+    </h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <!-- <a class="p-2 text-dark" href="#">Home</a> -->
+        <a class="p-2 text-dark" href="#">Category</a>
+        <a class="p-2 text-dark" [routerLink]="['/',  'checkout']">Checkout</a>
+        <!-- <button type="button" class="btn btn-outline-success txt-dark fa fa-shopping-cart"></button> -->
+    </nav>
+    <form class="d-flex align-items-center" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>

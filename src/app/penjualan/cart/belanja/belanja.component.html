@@ -1,0 +1,11 @@
+<div *ngIf="itemBelanja.length === 0" class="alert alert-info">Tidak Ada Item Yang ditambahkan</div>
+
+<ul *ngIf="itemBelanja.length > 0" class="list-group">
+    <li class="list-group-item" *ngFor="let item of itemBelanja">
+        <app-item-belanja [itemBelanja]="item"></app-item-belanja>
+    </li>
+
+    <li class="list-group-item active">
+        <strong>Total: {{ totalBelanja | currency:'IDR' }}</strong>
+    </li>
+</ul>

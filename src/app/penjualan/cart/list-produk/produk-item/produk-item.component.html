@@ -1,0 +1,16 @@
+<div class="card shadow-sm">
+    <img class="bd-placeholder-img card-img-top" width="100%" src="{{produkItem.imageUrl}}">
+    <div class="card-body">
+    <p class="card-text">
+        <strong>{{ produkItem.harga | currency:'IDR' }}</strong>
+    </p>
+    <p class="card-text">{{ produkItem.nama_barang }}</p>
+      <!-- <p class="card-text">{{ produkItem.deskripsi }}</p> -->
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-success" (click)="handleAddToCart()">Add to Cart</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['/', 'detail']">Detail</button>
+        </div>
+      </div>
+    </div>
+  </div>
